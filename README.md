@@ -117,7 +117,7 @@ Contributions are welcome! Please open issues or submit pull requests for improv
 
 ## License
 
-MIT License. See [LICENSE](LICENSE) for details.
+MIT License. See [LICENSE](LICENSE.md) for details.
 
 ---
 
