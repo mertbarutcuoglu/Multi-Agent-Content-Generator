@@ -1,0 +1,19 @@
+[project]
+name = "multi_agent_content_creator"
+version = "0.1.0"
+description = "Multi agent AI tool to find and create Reddit voiceover Instagram Reels"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "crewai>=0.150.0",
+    "langchain-community>=0.3.27",
+    "langchain-openai>=0.3.28",
+    "librosa>=0.11.0",
+    "markdown>=3.8.2",
+    "moviepy==1.0.3",
+    "openai>=1.97.1",
+    "opencv-python>=4.12.0.88",
+    "praw>=7.8.1",
+    "pydub>=0.25.1",
+    "selenium>=4.34.2",
+]

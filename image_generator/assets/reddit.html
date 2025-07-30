@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+</head>
+
+<style>
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f2f5;
+    }
+    .reddit-box {
+        width: 40%;
+        max-width: 600px;
+        background-color: #ffffff;
+        border: 1px solid #e1e1e1;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+        padding: 15px;
+        position: relative;
+    }
+    .reddit-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .subreddit-info {
+        display: flex;
+        align-items: center;
+    }
+    .subreddit-name {
+        font-weight: bold;
+        color: #0079d3;
+        margin-right: 10px;
+    }
+    .author-name {
+        font-size: 0.9em;
+        color: #555;
+    }
+    .reddit-logo {
+        width: 30px;
+        height: 30px;
+    }
+    .post-title {
+        font-size: 1.2em;
+        color: #333;
+        margin-bottom: 10px;
+        line-height: 1.4;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+
+<div class="reddit-box">
+    <div class="reddit-header">
+        <div class="subreddit-info">
+            <div class="subreddit-name">r/{{ subreddit | markdown }}</div>
+            <div class="author-name">by u/{{ author }}</div>
+        </div>
+        <img src="https://www.redditstatic.com/desktop2x/img/favicon/apple-icon-180x180.png" alt="Reddit Logo" class="reddit-logo">
+    </div>
+    <div class="post-title">{{ title }}</div>
+</div>
+
+</body>
+</html>
